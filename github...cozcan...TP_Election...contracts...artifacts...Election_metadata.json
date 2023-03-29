@@ -1,0 +1,201 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_candidateId",
+						"type": "uint256"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "candidatesCount",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "candidates",
+				"outputs": [
+					{
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"name": "voteCount",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "addCandidate",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "voters",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "_candidateId",
+						"type": "uint256"
+					}
+				],
+				"name": "votedEvent",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"transferOwnership(address)": {
+					"details": "Allows the current owner to transfer control of the contract to a newOwner.\r",
+					"params": {
+						"newOwner": "The address to transfer ownership to.\r"
+					}
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"github/cozcan/TP_Election/contracts/Election.sol": "Election"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"github/cozcan/TP_Election/contracts/Election.sol": {
+			"keccak256": "0x322328509a2c8171952a9914f8e52f0ee90880bfa1a10ccab6b2103c39bb49fd",
+			"urls": [
+				"bzzr://f18a95a629ab004a791420dab5b47f7c29a7e75e072bc159e1cff42cc5f0de67"
+			]
+		},
+		"github/cozcan/TP_Election/contracts/Ownable.sol": {
+			"keccak256": "0xefc64c627e8b8b49b3f51bdb7f0b860ea78dda7156d5929b7d69bc3c91f48502",
+			"urls": [
+				"bzzr://83ce3a89e4ea198092b898837be68e8e44c24d331d9ebbbcbe3fd0b439404462"
+			]
+		},
+		"github/cozcan/TP_Election/contracts/SafeMath.sol": {
+			"keccak256": "0x11339994959b029534874b220d53d10ba853e164d5a4e7ebc78729012dccb63b",
+			"urls": [
+				"bzzr://2a2ee10a96c66a07527d3dd44af98787743176fbc70efb7f04222ecff810812f"
+			]
+		}
+	},
+	"version": 1
+}
